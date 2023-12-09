@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3705775833
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scrappack
+      Dependencies: {}

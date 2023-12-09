@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="./netfx.props" />
+    <PropertyGroup>
+	<LangVersion>11</LangVersion>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{5D075FCA-AFEC-44C9-8C5F-272ECF4CFF0D}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>scrappack</RootNamespace>
+        <AssemblyName>scrappack</AssemblyName>
+        <TargetFramework>net48</TargetFramework>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+	<!-- <Reference Include="netstandard" /> -->
+        <Reference Include="LethalLib">
+	  <HintPath>..\..\lc-ref\BepInEx\plugins\LethalLib\LethalLib.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+	  <HintPath>..\..\lc-ref\Managed\Assembly-CSharp.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="BepInEx">
+          <HintPath>..\..\lc-ref\BepInEx\core\BepInEx.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="Harmony">
+          <HintPath>..\..\lc-ref\BepInEx\core\0Harmony.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine">
+          <HintPath>..\..\lc-ref\Managed\UnityEngine.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+          <HintPath>..\..\lc-ref\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\lc-ref\Managed\UnityEngine.CoreModule.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+          <HintPath>..\..\lc-ref\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="Unity.Netcode.Components">
+          <HintPath>..\..\lc-ref\Managed\Unity.Netcode.Components.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="Unity.Netcode.Runtime">
+          <HintPath>..\..\lc-ref\Managed\Unity.Netcode.Runtime.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+        <Reference Include="Unity.Networking.Transport">
+          <HintPath>..\..\lc-ref\Managed\Unity.Networking.Transport.dll</HintPath>
+	  <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+</Project>
